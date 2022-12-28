@@ -1,11 +1,18 @@
 <ul class="flex list-disc items-center justify-center w-screen flex-wrap px-3 text-gray-800 border-solid border-b border-gray-200">
-    <li (mouseenter)="openNavbarItem(i)" (mouseleave)="closeNavbarItem(i)" *ngFor="let item of navbarItems;index as i" class="mx-3 pb-5">
+    <li *ngFor="let item of navbarItems;index as i" (mouseenter)="openNavbarItem(i)" (mouseleave)="closeNavbarItem(i)" class="mx-3 pb-5">
         <a href="#">
             {{item.name}}
         </a>
-        <div class="w-screen h-32 absolute mt-5 right-0 border-solid border-top border-gray-200 transition-all duration-300 flex justify-center" [class]="item.class">
-            <div class="max-h-[1424px] d-flex items-start">
-
+        <div class="w-screen absolute mt-5 right-0 border-solid border-top border-gray-200 transition-all duration-300 flex justify-center shadow-md" [class]="item.class">
+            <div class="w-full max-w-[1424px] flex items-start justify-start py-5">
+                <div *ngFor="let list of item.items" class="w-auto h-full flex flex-col pr-5 pl-10 border-solid border-l border-gray-200">
+                    <a href="#" class="pb-5">
+                        {{list.title}}
+                    </a>
+                    <a *ngFor="let name of list.listItem" href="#" class="text-gray-500 pb-3 text-sm font-thin">
+                        {{name}}
+                    </a>
+                </div>
             </div>
         </div>
     </li>
