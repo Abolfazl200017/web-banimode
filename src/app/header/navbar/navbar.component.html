@@ -1,0 +1,12 @@
+<ul class="flex list-disc items-center justify-center w-screen flex-wrap px-3 text-gray-800 border-solid border-b border-gray-200">
+    <li (mouseenter)="openNavbarItem(i)" (mouseleave)="closeNavbarItem(i)" *ngFor="let item of navbarItems;index as i" class="mx-3 pb-5">
+        <a href="#">
+            {{item.name}}
+        </a>
+        <div class="w-screen h-32 absolute mt-5 right-0 border-solid border-top border-gray-200 transition-all duration-300 flex justify-center" [class]="item.class">
+            <div class="max-h-[1424px] d-flex items-start">
+
+            </div>
+        </div>
+    </li>
+</ul>
