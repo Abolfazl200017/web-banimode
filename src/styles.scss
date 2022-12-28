@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 // @config './tailwindcss.config.js';
-
+@import 'assets/scss/style';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
