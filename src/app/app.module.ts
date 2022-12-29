@@ -13,6 +13,7 @@ import { SliderComponent } from './slider/slider.component';
 import { PopularComponent } from './popular/popular.component';
 import { AboutComponent } from './about/about.component';
 import { BrandsComponent } from './brands/brands.component';
+import { MagComponent } from './mag/mag.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BrandsComponent } from './brands/brands.component';
     SliderComponent,
     PopularComponent,
     AboutComponent,
-    BrandsComponent
+    BrandsComponent,
+    MagComponent
   ],
   imports: [
     BrowserModule,
