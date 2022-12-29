@@ -3,21 +3,22 @@
     <!-- <div class="absolute right-0 top-[50%] cursor-pointer flex items-center justify-center">
       <img src="assets/img/chevron-right-solid.svg" alt="" class="w-6 aspect-square">
     </div> -->
-    <ng-template swiperSlide>
+    <ng-template *ngFor="let item of slides" swiperSlide>
       <a href="#" class="w-full flex flex-col">
           <div class="rounded-lg w-full aspect-[10/12] bg-gray-100 relative">
-            <img src="assets/img/products/p-1.png" alt="" class="object-cover min-w-full min-h-full">
+            <img [src]="'assets/img/products/' + item.img" alt="" class="object-cover min-w-full min-h-full">
             <div class="absolute left-0 top-10 rounded-r-3xl px-5 py-3 bg-orange text-white flex items-center justify-center text-2xl font-semibold">
-              ٪۱۳
+              {{getOffPercent(item).toString()|convertToPersian}}%
             </div>
           </div>
           <div class="mt-3">
             <div class="flex justify-between py-3">
               <p class="text-xl font-semibold">
-                Jeanswest
+                {{item.brand}}
               </p>
               <p class="line-through text-gray-500">
-                ۷.۹۹۹.۰۰۰ تومان
+                {{item.prePrice.toString()|convertToPersian}}
+                تومان
               </p>
             </div>
             <div class="flex justify-between py-3">
@@ -25,13 +26,14 @@
                 پافر زنانه جین وست
               </p>
               <p class="text-xl text-green">
-                ۶.۹۹۹.۰۰۰ تومان
+                {{item.price.toString()|convertToPersian}}
+                تومان
               </p>
             </div>
           </div>
           <div class="w-full flex">
-            <div class="py-1 px-3 ml-2 border rounded-md border-solid border-gray-300 text-gray-700 text-sm">
-              XL
+            <div *ngFor="let size of item.sizes" class="py-1 px-3 ml-2 border rounded-md border-solid border-gray-300 text-gray-700 text-sm">
+              {{size}}
             </div>
           </div>
       </a>
