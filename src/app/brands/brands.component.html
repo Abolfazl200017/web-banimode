@@ -1,0 +1,13 @@
+<div class="w-[90%] mx-auto max-w-[1424px] flex flex-col items-center mt-20">
+    <div class="text-3xl mb-12">
+        برترین برندها در بانی‌مد
+    </div>
+    <swiper [slidesPerView]="9"  [spaceBetween]="30" [loop]="true" [autoplay]="true" class="mySwiper mb-8 w-full max-w-[1424px]">
+        <ng-template *ngFor="let i of ['p-1.png','p-2.jpg','p-3.jpg','p-4.png','p-5.jpg','p-6.png','p-7.png','p-8.png','p-9.jpg','p-10.jpg','p-11.jpg','p-12.jpg',]" swiperSlide>
+            <img [src]="'../../assets/img/brands/'+i" alt="">
+        </ng-template>
+    </swiper>
+    <button class="rounded-3xl border border-solid border-gray-300 text-lg text-[#00bf6f] py-2 px-12 hover:text-[#0bcf74] hover:border-[#0bcf74] ease-in-out duration-300">
+        مشاهده همه برندها
+    </button>
+</div>

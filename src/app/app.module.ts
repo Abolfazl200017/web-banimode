@@ -12,6 +12,7 @@ import { SwiperModule } from 'swiper/angular';
 import { SliderComponent } from './slider/slider.component';
 import { PopularComponent } from './popular/popular.component';
 import { AboutComponent } from './about/about.component';
+import { BrandsComponent } from './brands/brands.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutComponent } from './about/about.component';
     ConvertToPersianPipe,
     SliderComponent,
     PopularComponent,
-    AboutComponent
+    AboutComponent,
+    BrandsComponent
   ],
   imports: [
     BrowserModule,
