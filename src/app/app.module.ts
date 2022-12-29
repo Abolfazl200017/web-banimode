@@ -10,6 +10,7 @@ import { OfferProductComponent } from './offer-product/offer-product.component';
 import { ConvertToPersianPipe } from './convert-to-persian.pipe';
 import { SwiperModule } from 'swiper/angular';
 import { SliderComponent } from './slider/slider.component';
+import { PopularComponent } from './popular/popular.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SliderComponent } from './slider/slider.component';
     EventComponent,
     OfferProductComponent,
     ConvertToPersianPipe,
-    SliderComponent
+    SliderComponent,
+    PopularComponent
   ],
   imports: [
     BrowserModule,
