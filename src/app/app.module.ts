@@ -8,7 +8,8 @@ import { NavbarComponent } from './header/navbar/navbar.component';
 import { EventComponent } from './event/event.component';
 import { OfferProductComponent } from './offer-product/offer-product.component';
 import { ConvertToPersianPipe } from './convert-to-persian.pipe';
-
+import { SwiperModule } from 'swiper/angular';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,13 @@ import { ConvertToPersianPipe } from './convert-to-persian.pipe';
     NavbarComponent,
     EventComponent,
     OfferProductComponent,
-    ConvertToPersianPipe
+    ConvertToPersianPipe,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

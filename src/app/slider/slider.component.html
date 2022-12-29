@@ -1,0 +1,15 @@
+<div class="w-full max-w-[1424px] mx-auto">
+
+</div>
+<swiper [slidesPerView]="3"  [spaceBetween]="30" [pagination]="{clickable: true}" [loop]="true" [autoplay]="true" class="mySwiper grid grid-cols-4 mb-10">
+      <ng-template swiperSlide class="col-span-1 h-64 bg-yellow-100">
+        <div class="h-64 w-full bg-red-100">
+            Slide 1
+        </div>
+      </ng-template>
+      <ng-template swiperSlide class="col-span-1 h-64 bg-yellow-200">Slide 2</ng-template>
+      <ng-template swiperSlide class="col-span-1 h-64 bg-yellow-300">Slide 3</ng-template>
+      <ng-template swiperSlide class="col-span-1 h-64 bg-yellow-400">Slide 4</ng-template>
+      <ng-template swiperSlide class="col-span-1 h-64 bg-yellow-500">Slide 5</ng-template>
+      <ng-template swiperSlide class="col-span-1 h-64 bg-yellow-600">Slide 6</ng-template>
+</swiper>

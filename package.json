@@ -25,6 +25,7 @@
     "eva-icons": "^1.1.3",
     "material-icons": "^1.13.1",
     "rxjs": "~7.5.0",
+    "swiper": "^8.4.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
