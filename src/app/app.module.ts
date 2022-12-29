@@ -11,6 +11,7 @@ import { ConvertToPersianPipe } from './convert-to-persian.pipe';
 import { SwiperModule } from 'swiper/angular';
 import { SliderComponent } from './slider/slider.component';
 import { PopularComponent } from './popular/popular.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PopularComponent } from './popular/popular.component';
     OfferProductComponent,
     ConvertToPersianPipe,
     SliderComponent,
-    PopularComponent
+    PopularComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
