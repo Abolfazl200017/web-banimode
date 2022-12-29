@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { EventComponent } from './event/event.component';
+import { OfferProductComponent } from './offer-product/offer-product.component';
+import { ConvertToPersianPipe } from './convert-to-persian.pipe';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { EventComponent } from './event/event.component';
     AppComponent,
     HeaderComponent,
     NavbarComponent,
-    EventComponent
+    EventComponent,
+    OfferProductComponent,
+    ConvertToPersianPipe
   ],
   imports: [
     BrowserModule,

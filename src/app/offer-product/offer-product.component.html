@@ -1,0 +1,29 @@
+<div class="w-full flex justify-center pt-10">
+    <div class="w-full max-w-[1424px] flex flex-col items-center">
+        <div class="flex justify-between items-start w-full">
+            <img src="https://www.banimode.com/img/cms/010912/1670058721.png" alt="" class="h-14">
+            <div class="flex items-center">
+                <p class="text-green text-xl">
+                    زمان باقیمانده تا پایان سفارش
+                </p>
+                <ul class="flex items-center mr-5">
+                    <li class="w-12 h-12 flex items-center justify-center bg-[#f16423] text-white text-2xl font-semibold rounded-lg">
+                        {{time[0].toString()|convertToPersian}}
+                    </li>
+                    <span class="h-12 flex items-center text-[#f16423] text-3xl font-semibold mx-2">
+                        :
+                    </span>
+                    <li class="w-12 h-12 flex items-center justify-center bg-[#f16423] text-white text-2xl font-semibold rounded-lg">
+                        {{time[1].toString()|convertToPersian}}
+                    </li>
+                    <span class="h-12 flex items-center text-[#f16423] text-3xl font-semibold mx-2">
+                        :
+                    </span>
+                    <li class="w-12 h-12 flex items-center justify-center bg-[#f16423] text-white text-2xl font-semibold rounded-lg">
+                        {{time[2].toString()|convertToPersian}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
