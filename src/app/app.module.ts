@@ -14,6 +14,7 @@ import { PopularComponent } from './popular/popular.component';
 import { AboutComponent } from './about/about.component';
 import { BrandsComponent } from './brands/brands.component';
 import { MagComponent } from './mag/mag.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MagComponent } from './mag/mag.component';
     PopularComponent,
     AboutComponent,
     BrandsComponent,
-    MagComponent
+    MagComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
