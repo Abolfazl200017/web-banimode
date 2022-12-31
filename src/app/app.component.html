@@ -1,6 +1,7 @@
 <app-header></app-header>
 <app-event></app-event>
 <app-offer-product></app-offer-product>
+<app-popular></app-popular>
 <div class="w-full grid md:hidden grid-cols-2 mt-5">
     <a href="#" class="col-span-1 aspect-square p-3">
         <img src="https://www.banimode.com/img/cms/010501/1658572803.jpg" alt="" class="object-cover min-w-full min-h-full rounded-lg">
@@ -15,9 +16,14 @@
         <img src="https://www.banimode.com/img/cms/010210/1651318735.jpg" alt="" class="object-cover min-w-full min-h-full rounded-lg">
     </a>
 </div>
-<app-popular></app-popular>
-<app-about></app-about>
-<app-brands></app-brands>
-<app-mag></app-mag>
-<app-news></app-news>
+<div class="w-full hidden md:block">
+    <app-about></app-about>
+    <app-brands></app-brands>
+    <app-mag></app-mag>
+    <app-news></app-news>
+</div>
+<div class="w-full md:hidden">
+    <app-mag></app-mag>
+    <app-brands></app-brands>
+</div>
 <app-footer></app-footer>
