@@ -1,3 +1,13 @@
+Web course project of 'banimode.com' home page(landig page)
+stu name:Abolfazl Zeraatkar
+stu num:973112074
+نام دانشجو: ابوالفضل زراعتکار
+
+برای اجرای کد ابتدا در پوشه اصلی (WEB_BANIMODE) وارد شده
+سپس دستور 'npm i'را برای نصب پکیج ها وارد کنید
+و در نهایت برای اجرای پروژه دستور 'ng serve -o' را اجرا کنید.
+متشکرم
+
 # WebBanimode
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
