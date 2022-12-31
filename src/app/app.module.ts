@@ -16,6 +16,7 @@ import { BrandsComponent } from './brands/brands.component';
 import { MagComponent } from './mag/mag.component';
 import { NewsComponent } from './news/news.component';
 import { FooterComponent } from './footer/footer.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     BrandsComponent,
     MagComponent,
     NewsComponent,
-    FooterComponent
+    FooterComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
