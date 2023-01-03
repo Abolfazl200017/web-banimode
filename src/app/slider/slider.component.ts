@@ -20,7 +20,7 @@ export interface ISlide{
 export class SliderComponent implements OnInit {
   slides:ISlide[]=[
     {
-      img:'p-1.png',
+      img:'p-1.webp',
       prePrice:7999000,
       price:6999000,
       brand:"Jeanswest",
@@ -28,7 +28,7 @@ export class SliderComponent implements OnInit {
       sizes:['XL','L','M']
     },
     {
-      img:'p-2.png',
+      img:'p-2.webp',
       prePrice:9999000,
       price:5999000,
       brand:"Nike",
@@ -36,7 +36,7 @@ export class SliderComponent implements OnInit {
       sizes:['XL','L']
     },
     {
-      img:'p-7.png',
+      img:'p-7.webp',
       prePrice:7500000,
       price:6999000,
       brand:"addidas",
@@ -44,7 +44,7 @@ export class SliderComponent implements OnInit {
       sizes:['2XL','XL','L','M']
     },
     {
-      img:'p-4.png',
+      img:'p-4.webp',
       prePrice:7999000,
       price:6999000,
       brand:"Jeanswest",
@@ -52,7 +52,7 @@ export class SliderComponent implements OnInit {
       sizes:['XL','L','M']
     },
     {
-      img:'p-6.png',
+      img:'p-6.webp',
       prePrice:7999000,
       price:6999000,
       brand:"Jeanswest",
